@@ -1,0 +1,17 @@
+# 🐍 Exercícios de Python - CodeMayPy
+
+Este repositório contém uma coleção de mais de 80 exercícios práticos resolvidos por mim durante meus estudos de Python no Curso em Vídeo. O objetivo é consolidar os fundamentos da linguagem, desde lógica básica até estruturas de dados mais complexas.
+
+## 🚀 Tecnologias Utilizadas
+* **Python**
+* Lógica de Programação
+
+## 📂 Estrutura do Repositório
+Os exercícios estão organizados de forma sequencial (`ex001.py`, `ex002.py`, etc.). Muitos arquivos contêm comentários explicativos para facilitar o entendimento da solução adotada.
+
+### O que você encontrará aqui:
+* **Fundamentos:** Variáveis, tipos de dados e operadores aritméticos.
+* **Estruturas Condicionais:** Uso de `if`, `elif` e `else`.
+* **Estruturas de Repetição:** Loops com `while` e `for`.
+* **Tratamento de Dados:** Manipulação de strings, listas, tuplas e dicionários.
+* **Módulos e Funções:** Organização de código e reutilização.
