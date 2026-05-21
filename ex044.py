@@ -12,7 +12,7 @@ print('''Qual a forma de pagamento?
 [ 2 ] à vista (cartão de débito)
 [ 3 ] 2x cartão de crédito
 [ 4 ] 3x ou mais cartão de crédito''')
-'''escolha = int(input('Qual a forma de pagamento?'))
+escolha = int(input('Qual a forma de pagamento?'))
 if escolha == 1:
     print(f'Sua compra de R${preco} receberá desconto de 10% e ficará R${preco - (preco*0.10):.2f}.')
 elif escolha == 2:
