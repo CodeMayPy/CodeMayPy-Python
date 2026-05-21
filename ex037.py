@@ -7,7 +7,7 @@ print('''Escolha uma das bases de conversão:
       [ 1 ] BINÁRIO'
       [ 2 ] OCTAL'
       [ 3 ] HEXADECIMAL''')
-'''opcao = int(input('Digite sua escolha:'))
+opcao = int(input('Digite sua escolha:'))
 if opcao == 1:
     print(f'o número {numero} convertido para binário fica: {bin(numero)[2:]}.')
 elif opcao == 2:
