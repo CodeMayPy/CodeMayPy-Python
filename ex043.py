@@ -1,27 +1,5 @@
-#Body Mass Index
-#43-Develop a logic that reads a person's weight and height, calculates their Body Mass Index (BMI) and
-# shows their status, according to the table below:
-# – BMI below 18.5: Underweight
-#– Between 18.5 and 25: Ideal Weight
-#– 25 to 30: Overweight
-#– 30 to 40: Obesity
-#– Over 40: Morbidly Obese
-weight = float(input("Enter your weight in Kg:"))
-height = float(input('Enter your height in meters:'))
-bmi = weight / (height ** 2)
-print(f'Your weight is {weight}kg and your height is {height}m, your BMI is {bmi:.2f}.')
-if bmi < 18.5:
-    print('You are underweight.')
-elif 18.5 <= bmi < 25:
-    print('You are ideal weight!')
-elif 25 <= bmi < 30:
-    print('You are overweight.')
-elif 30 <= 40:
-    print('You are obesity.')
-elif bmi >= 40:
-    print('You are morbidly obese.')
-
-
+'''
+#Versão antiga
 #Índice de Massa Corporal
 # 43: Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu Índice de Massa Corporal (IMC) e mostre
 #seu status, de acordo com a tabela abaixo:
@@ -43,7 +21,23 @@ elif imc >= 30 and imc <= 40:
     print(f'Seu IMC é de {imc:.2f} e você está com obesidade.')
 elif imc > 40:
     print(f'Seu IMC é de {imc:.2f} e você está com obesidade mórbida.')
+'''
 
+#Versão revisada
 
-# PT- Condições aninhadas.
-# EN- Aligned conditions.
+print('Vamos ver se seu IMC está ideal...')
+peso = float(input('Digite seu peso KG: '))
+altura = float(input('Digite a sua altura: '))
+
+imc = peso / (altura * altura)
+
+if imc < 18.5:
+    print(f'Você está ABAIXO do peso, seu IMC é de {imc:.2f}.')
+elif imc < 25:
+    print(f'Você está no seu peso IDEAL e seu IMC é de {imc:.2f}.')
+elif imc < 30:
+    print(f'Você está com SOBREPESO e seu IMC é de {imc:.2f}.')
+elif imc <= 40:
+    print(f'Você está com OBESIDADE e seu IMC é de {imc:.2f}.')
+else:
+    print(f'Você esta com OBESIDADE MÓRBIDA e seu IMC é de {imc:.2f}.')
