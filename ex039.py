@@ -17,6 +17,7 @@ elif idade > 18:
     print(f'Já passou {idade - 18} do prazo de alistamento')
 '''
 
+
 # Versão revisada
 from datetime import date
 
