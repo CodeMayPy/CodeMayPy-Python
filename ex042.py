@@ -1,23 +1,5 @@
-#Analyzing Triangles v2.0
-#42- Redo triangle challenge 35, adding the feature of showing what type of triangle will be formed:
-# – EQUILATERAL: all sides equal
-# – ISOSCELES: two sides equal, one different
-# – SCALENE: all sides different
-'''first_segment = float(input('Enter thr first segment:'))
-second_segment = float(input('Enter the second segment:'))
-tirdh_segment = float(input('Enter the tirdh segment:'))
-if first_segment < second_segment + tirdh_segment and second_segment < first_segment + tirdh_segment and tirdh_segment < first_segment + second_segment:
-    print('The segments above CAN form a triangle!', end=' ')
-    if first_segment == second_segment == tirdh_segment:
-        print('Equilateral!')
-    elif first_segment != second_segment != tirdh_segment != first_segment:
-        print('Scalene!')
-    else:
-        print('Isosceles.')
-else:
-    print('The segments above CAN NOT form a triangle!.')'''
-
-
+'''
+#Versão antiga
 #Analisando Triângulos v2.0
 #42: Refaça o DESAFIO 35 dos triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado:
 # EQUILÁTERO: todos os lados iguais
@@ -36,7 +18,21 @@ if primeiro < segundo + terceiro and segundo < primeiro + terceiro and terceiro 
         print('isósceles.')
 else:
     print('Os dados informados não formaram um triângulo.')
+    '''
 
+#Versão revisada
 
-#PT- Condições aninhadas.
-#EN- Aligned conditions.
+primeiro_valor = float(input('Digite o valor da primeira reta:'))
+segundo_valor = float(input('Digite o valor da segunda reta:'))
+terceiro_valor = float(input('Digite o valor da terceira reta:'))
+
+if primeiro_valor < segundo_valor + terceiro_valor and segundo_valor < primeiro_valor + terceiro_valor and terceiro_valor < primeiro_valor + segundo_valor: #valida a existência do triângulo
+
+    if primeiro_valor == segundo_valor == terceiro_valor:
+        print('Todos os lados são iguais e você tem um triângulo EQUILÁTERO.')
+    elif primeiro_valor != segundo_valor != terceiro_valor != primeiro_valor: 
+        print('Todos os lados são diferentes e você tem um triângulo ESCALENO.')
+    else:
+        print('Você possui dois lados iguais e um diferente e tem um triângulo ISÓSCELES.')
+else:
+    print('Os valores informados não podem formar um triângulo.')
