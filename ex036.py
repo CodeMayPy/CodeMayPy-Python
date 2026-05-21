@@ -13,6 +13,7 @@ else:
     print('Tente adicionar mais uma renda')
 '''
 
+
 #versão revisada
 casa = float(input('Digite o valor da casa que deseja comprar R$: '))
 salario = float(input('Digite o valor do seu salário mensal: '))
