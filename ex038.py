@@ -15,6 +15,7 @@ else:
     print('Os dois números são iguais.')
 '''
 
+
 # Versão revisada
 primeiro_numero = int(input('Digite um número inteiro: '))
 segundo_numero = int(input('Digite outro número inteiro: '))
