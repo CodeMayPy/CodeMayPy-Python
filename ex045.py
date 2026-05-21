@@ -1,47 +1,5 @@
-#GAME: Rock Paper Scissors
-#45-Create a program that makes the computer play Jokenpô with you.
-from random import randint
-print("Let's play rock, paper, scissors:")
-items= ('Rock', 'Paper', 'Scissors')
-computer = randint(0, 2)
-print('''
-[ 0 ] Rock
-[ 1 ] Paper
-[ 2 ] Scissors''')
-player = int(input("What's your move?"))
-print('-=-' * 11)
-print(f'Computer played {items[computer]}.')
-print(f'Player played {items[player]}.')
-print('-=-' * 11)
-if computer == 0:
-   if player == 0:
-      print('Draw')
-   elif player == 1:
-       print('Player win!')
-   elif player ==2:
-        print('Computer win!')
-   else:
-       print('Invalid move!')
-elif computer == 1:
-    if player == 0:
-      print('Computer win!')
-    elif player == 1:
-      print('Draw')
-    elif player == 2:
-      print('Player win!')
-    else:
-        print('Invalid move!')
-elif computer == 2:
-    if player == 0:
-       print('Player win!')
-    elif player == 1:
-         print('Computer win!')
-    elif player == 2:
-         print('Draw')
-    else:
-        print('Invalid move!')
-
-
+'''
+#Versão antiga
 #GAME: Pedra Papel e Tesoura
 #45: Crie um programa que faça o computador jogar Jokenpô com você.
 from random import randint
@@ -82,7 +40,60 @@ elif computador == 2:
          print('Empate!')
     else:
         print('Jogada inválida!')
+'''
+
+#Versão revisada
+
+import time
+import random
+
+print('Vamos jogar pedra, papel ou tesoura!')
+time.sleep(1)
+
+print('''Escolha:
+         [1]- Pedra;
+         [2]- Papel;
+         [3]- Tesoura.''')
+
+jogador = int(input('Qual a sua jogada? '))
+opcoes = 'Pedra', 'Papel', 'Tesoura'
+jogada_computador = random.choice(opcoes)
+
+if jogador != 1 and jogador != 2 and jogador != 3:
+    print('Jogada inválida, tente novamente.')
+else:
+    time.sleep(2)
+    print('JO')
+    time.sleep(2)
+    print('Ken')
+    time.sleep(2)
+    print('PÔ\n')
+    print()
+print(jogada_computador)
+print()
+
+if jogada_computador == 'Pedra':
+    if jogador == 1:
+        print('Deu EMPATE, haha vamos de novo.')
+    elif jogador == 2:
+        print('Eu joguei PEDRA e você jogou PAPEL...\nPerdi, vamos denovo?')
+    elif jogador == 3:
+        print('Eu joguei PEDRA e você TESOURA... \nGanhei, quer revanche?')
 
 
-#PT- Condições aninhadas.
-#EN- Aligned conditions.
+if jogada_computador == 'Papel':
+    if jogador == 1:
+        print('Eu joguei PAPEL e você jogou PEDRA...\nGanhei, quer revanche?')
+    elif jogada_computador == 'Papel' and jogador == 2:
+        print('Deu EMPATE, haha vamos de novo.')
+    elif jogada_computador == 'Papel' and jogador == 3:
+        print('Eu joguei PAPEL e você jogou TESOURA...\nPerdi, vamos denovo?')
+     
+
+if jogada_computador == 'Tesoura':
+    if jogador == 1:
+        print('Eu joguei TESOURA e você jogou PEDRA...\nPerdi, vamos denovo?')
+    elif jogador == 2:
+        print('Eu joguei TESOURA e você jogou PAPEL...\nGanhei, quer revanche?')
+    elif jogador == 3:
+        print('Deu EMPATE, haha vamos de novo.')
