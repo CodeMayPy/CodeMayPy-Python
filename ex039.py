@@ -1,23 +1,5 @@
-#Military draft
-#39- Write a program that reads the year of birth of a young person and informs, according to his age, whether he is
-# still going to enlist in the military service, whether it is the exact time to enlist or if it is past the
-# enlistment period. Your program should also show the time remaining or the time that has passed.
-'''from datetime import date
-
-year = date.today().year
-birth = int(input('Enter your year of birth:'))
-age = year - birth
-print(f'Who was born in {birth} is {age} years old.')
-if age == 18:
-    print('You must enlist IMMEDIATELY!!')
-elif age < 18:
-    result = 18 - age
-    print(f'Still missing {result} years for your enlistment.')
-elif age > 18:
-    result = age - 18
-    print(f'You should have enlisted {result} years ago.')'''
-
-
+'''
+#Versão antiga
 #Alistamento Militar
 #39: Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, se ele ainda vai se
 #alistar ao serviço militar, se é a hora exata de se alistar ou se já passou do tempo do alistamento. Seu programa também
@@ -33,7 +15,20 @@ elif idade < 18:
     print(f'Você ainda tem {18 - idade} aos até se alistar.')
 elif idade > 18:
     print(f'Já passou {idade - 18} do prazo de alistamento')
+'''
 
+# Versão revisada
+from datetime import date
 
-#PT- Condições aninhadas.
-#EN- Aligned conditions.
+ano_nascimento = int(input('Digite o ano do seu nascimeto com 4 digitos:'))
+
+ano_atual = date.today().year
+idade = ano_atual - ano_nascimento
+print(f'Você tem {idade} anos.')
+
+if idade < 18:
+    print(f'Você é novo, faltam {18 - idade} anos para você se alistar.')
+elif idade == 18:
+    print('Esse ano você fez ou já tem 18 anos, bora se alistar!')
+else:
+    print(f'Onde você estava? Passaram {idade -18} anos do tempo de se alistar.')
