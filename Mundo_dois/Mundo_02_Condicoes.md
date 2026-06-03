@@ -8,7 +8,7 @@
 1. [Revisão](#revisao)
 2. [Operadores](#operadores)
 3. [Condições aninhadas](#condicoes-aninhadas)
-4.
+4. [Estrutura de repetição](#estrutura-de-repeticao)
 
 <br>
 
@@ -77,6 +77,8 @@ Verificam se determinado ***objeto*** está **associado** ou **pertence** a dete
 ➔ **Condições em cadeia (Múltiplas vias):** É quando usamos o `if`, `elif` e `else` para testar várias opções em sequência. O programa testa uma por uma; assim que encontra uma verdadeira, executa a tarefa e ignora o resto do bloco.<br>
 ➔ **Condições Aninhadas:** Em Python, chamamos de "aninhamento" o ato de colocar uma estrutura condicional *dentro* de outra (como uma boneca russa). Para o Python entender que uma estrutura está dentro da outra, usamos os espaços (**indentação**).<br>
 
+    As condições aninhadas fazem parte da execução condicional. Elas são usadas quando o seu programa precisa tomar decisões baseadas em múltiplos critérios, funcionando como uma "pergunta dentro de outra".
+
 ➔ **Estrutura básica:**<br>
 🔹 **`if`:** Bloco de código se a condição for **verdadeira**. <br>
 🔹 **`elif`:** Bloco de código se a outra condição for **verdadeira**.<br>
@@ -91,4 +93,66 @@ elif idade == 18:
 else:
     print('Você é maior de idade.')
 ```
+[↑ Voltar ao topo](#topo)
+
+## Estrutura de repetição
+
+➔ Também conhecidas como **iteração** ou **laços (loops)**, as estruturas de repetição são blocos básicos de qualquer linguagem de programação.<br>
+➔ São usadaspara executar um bloco de códigos várias vezes, enquanto uma condição for **verdadeira** ou para iterar sobre uma **sequência** de elementos (como listas, tuplas, strings, etc...). <br>
+➔ Existem dois tipos principais de estruturas de repetição: o **`for`** e o **`while`**.
+
+🔹**Estrutura for:** <br>
+- É utilizado para percorrer elementos de uma sequência (como uma lista, string, ou intervalo) de forma **iterativa**.<br>
+- Sintaxe:
+```python
+for elemento in sequência:
+    #bloco a ser executado
+```
+- O `range()` é usado para **gerar** números em uma sequência. <br>
+
+🔹**Estrutura while:** <br>
+- O `while`executa um bloco de código enquanto uma condição for **verdadeira**.<br>
+- Sintaxe:
+```python
+while condição:
+    #bloco a ser executado.
+```
+<br>
+
+➔ **Comandos chaves:** <br>    
+- **`break`:** Interrompe a execução do laço. <br>
+Exemplo:
+```python
+for numero in range(10):
+    if numero == 5:
+        break
+    print(numero)
+'''Saída:
+0
+1
+2
+3
+4 '''
+```    
+<br>
+
+- **`continue`:** Pula para a próxima iteração do laço.
+Exemplo:
+```python
+for numero in range(5):
+    if numero == 2:
+        continue
+    print(numero)
+'''Saída:
+0
+1
+3
+4'''
+```
+<br>
+
+➔ Use `for`para percorrer sequências ou intervalos conhecidos.<br>
+➔ Use `while` para repetir algo enquanto uma condição for **verdadeira**. <br>
+➔ Combine com `break`, `continue` e `else` para controlar melhor o fluxo do laço.<br>
+
 [↑ Voltar ao topo](#topo)
