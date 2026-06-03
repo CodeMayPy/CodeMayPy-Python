@@ -1,16 +1,14 @@
-# 73: Crie uma tupla preenchida com os 20 primeiros colocados da Tabela do Campeonato Brasileiro de Futebol,
-# na ordem de colocação. Depois mostre:
-# a) Os 5 primeiros times.
-# b) Os últimos 4 colocados.
-# c) Times em ordem alfabética.
-# d) Em que posição está o time da Grêmio.
-times = ('Botafogo', 'Palmeiras', 'Flamengo', 'Fortaleza',
-         'Internacional', 'São Paulo', 'Corinthians', 'Bahia',
-         'Cruzeiro', 'Vasco da Gama', 'Ec Vitória', 'Atlético-MG',
-         'Fluminense', 'Grêmio', 'Juventude', 'Bragantino', 'Athletico-PR',
-         'Criciúma', 'Atlético-GO', 'Cuiabá')
-print(f'A lista dos times do Brasileirão é {times}.')
-print(f'Os cinco primeiros times são: {times[0:5]}.')
-print(f'Os quatro últimos são: {times [-4:]}.')
-print(f'Os times em ordem alfabética ficam: {sorted(times)}.')
-print(f'O Grêmio se encontra na posição {times.index("Grêmio")+1}º.')
+brasileirao = ('Palmeiras', 'Flamengo', 'Fluminense', 'Athletico-PR', 'Bragantino', 'Coritiba', 'São Paulo', 'Bahia', 'Cruzeiro', 'Botafogo', 'EC Vitória', 'Atlético-MG', 'Internacional', 'Grêmio', 'Corinthians', 'Vasco da Gama', 'Santos', 'Mirassol', 'Remo', 'Chapecoense')
+
+print(f'Os cinco primeiros colocados em ordem são: {brasileirao[0:5]}')
+print()
+
+print(f'Os 4 últimos colocados são: {brasileirao[-4:]}')
+print()
+
+tupla_ordem = tuple(sorted(brasileirao))
+
+print(f'Os 20 times classificados no Brasileirão em ordem alfbética será: {tupla_ordem}.')
+print()
+
+print(f' O time Chapeco se encontra na posição: {brasileirao.index("Chapecoense")+1} da classificação')
