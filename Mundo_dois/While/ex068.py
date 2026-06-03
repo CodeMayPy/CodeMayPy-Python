@@ -1,28 +1,27 @@
-# Make a program that plays odd or even with the computer. The game will only stop when the player loses, showing the
-# total number of consecutive wins he has achieved at the end of the game.
 from random import randint
-w = 0
+
+valor = 0
 while True:
-    player = int(input("Enter a number:"))
-    computer = randint(0,10)
-    total = player + computer
-    tpe = ' '
-    while tpe not in "EO":
-        tpe = str(input("Ear or odd? [E/O]")).strip().upper()[0]
-    print(f"You played {player} and the computer {computer}. the total is {total}")
-    if tpe == "E":
+    jogador = int(input("Digite um número: "))
+    computador = randint(0, 10)
+    total = jogador + computador
+    tipo = ' '
+    while tipo not in "PI":
+        tipo = str(input("Par ou Ímpar? [P/I] ")).strip().upper()[0]
+    print(f"Você jogou {jogador} e o computador {computador}. O total é {total}")
+    if tipo == "P":
         if total % 2 == 0:
-            print("You Win!")
-            w += 1
+            print("Você Venceu!")
+            valor += 1
         else:
-            print(" You Lost!!")
+            print("Você Perdeu!!")
             break
-    elif tpe == "O" :
+    elif tipo == "I":
         if total % 2 == 1:
-            print("You Win!")
-            w += 1
+            print("Você Venceu!")
+            valor += 1
         else:
-            print("You lost!!")
+            print("Você Perdeu!!")
             break
-    print("Let's play again...")
-print(f"You win {w} times.")
+    print("Vamos jogar novamente...")
+print(f"Você venceu {valor} vezes.")
