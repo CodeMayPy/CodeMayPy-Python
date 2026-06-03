@@ -1,5 +1,3 @@
-#076: Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços, na sequência. No
-# final, mostre uma listagem de preços, organizando os dados em forma tabular.
 produtos = ( 'cleasing oil', 69.99,
              'Gloss', 10.90,
              'Serúm', 15.99,
