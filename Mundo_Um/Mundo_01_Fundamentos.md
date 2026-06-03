@@ -19,6 +19,7 @@ O nome Python vem do programa de comédia da BBC chamado:"Monty Python's Flying 
 1. [Variáveis](#variaveis)
 2. [Tipos primitivos](#tipos-primitivos)
 3. [Operadores](#operadores)
+4. [Estrutura condicional](#estrutura-condicional)
 
 
 <br>
@@ -180,4 +181,22 @@ Verificam se determinado ***objeto*** está **associado** ou **pertence** a dete
 🔹 **`not in`** ⟶ Retorna `True`caso o valor **não** seja encontrado na sequência.
 
 
+[↑ Voltar ao topo](#topo)
+
+## Estrutura condicional
+
+➔ São estruturas que permitem que um programa tome *decisões* com base em *condições específicas*. <br>
+➔ São usadas para controlar o **fluxo** de execução de um programa, permitindo que diferentes ações sejam tomadas dependendo de certas **condições**. <br>
+
+➔ **Estrutura básica:**<br>
+🔹 **`if`:** Bloco de código se a condição for **verdadeira**. <br>
+🔹 **`else`:** Bloco de código se **nenhuma** das condições anteriores for verdadeira.<br>
+Exemplo:
+```Python
+idade = 18
+if idade < 18:
+    print('Você é menor de idade.')
+else:
+    print('Você é maior de idade.')
+```
 [↑ Voltar ao topo](#topo)
