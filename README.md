@@ -9,18 +9,19 @@ Mais do que apenas um repositório de códigos, este projeto funciona como o meu
 
 ## 🚀 Tecnologias Utilizadas
 * **Python**
-* Lógica de Programação
-* Markdown (para documentação e resumos)
+* Python 3.
+* Git & GitHub (Boas práticas com Conventional Commits).
+* Markdown (para documentação e resumos).
+* Lógica de Programação.
 
 ## 📂 Estrutura do Repositório
-Os exercícios estão organizados de forma sequencial (`ex001.py`, `ex002.py`, etc.). Muitos arquivos contêm comentários explicativos para facilitar o entendimento da solução adotada.
+O projeto está organizado por módulos de aprendizado (Mundos), espelhando a cronologia do curso. Dentro de cada pasta, os exercícios seguem o padrão sequencial (ex001.py, ex002.py, etc.) acompanhados de arquivos de revisão.
 
-### O que você encontrará aqui:
-* **Fundamentos:** Variáveis, tipos de dados e operadores aritméticos.
-* **Estruturas Condicionais:** Uso de `if`, `elif` e `else`.
-* **Estruturas de Repetição:** Loops com `while` e `for`.
-* **Tratamento de Dados:** Manipulação de strings, listas, tuplas e dicionários.
-* **Módulos e Funções:** Organização de código e reutilização.
+- **Mundo_Um**: Fundamentos da linguagem, variáveis, tipos primitivos, operadores aritméticos, utilização de módulos e estruturas condicionais simples/compostas.
+
+- **Mundo_dois**: Estruturas de controle, condições aninhadas em cadeia e estruturas de repetição (for e while com break/continue).
+
+- **Mundo_três**: Estruturas Compostas, pastas dedicadas ao tratamento avançado de dados com Listas, Tuplas e Dicionários.
 
 ---
 *🛠️ Repositório em constante atualização, revisão e adição de novos conteúdos conforme avanço nos estudos.*
