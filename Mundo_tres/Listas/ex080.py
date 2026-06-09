@@ -1,6 +1,6 @@
 lista = []
 for c in range (0,5):
-    numero = int(input('Digiter um valor:'))
+    numero = int(input('Digite um valor:'))
     if c == 0 or numero > lista[-1] :
         lista.append(numero)
     else:
