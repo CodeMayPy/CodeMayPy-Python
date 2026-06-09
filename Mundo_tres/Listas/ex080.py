@@ -1,21 +1,13 @@
 lista = []
-lista_ordenada = []
-
-for c in range(0, 5):
-    numero = int(input(f'Digite o {c+1}º número da sua lista: '))
-    lista.append(numero)
-
-for item in lista:
-    if not lista_ordenada:
-        lista_ordenada.append(item)
+for c in range (0,5):
+    numero = int(input('Digiter um valor:'))
+    if c == 0 or numero > lista[-1] :
+        lista.append(numero)
     else:
-        inserido = False
-        for i in range(len(lista_ordenada)):
-            if item < lista_ordenada[i]:
-                lista_ordenada.insert(i, item)
-                inserido = True
+        pos = 0
+        while pos < len(lista):
+            if numero <= lista[pos]:
+                lista.insert(pos, numero)
                 break
-        if not inserido:
-            lista_ordenada.append(item)
-
-print(f'Sua lista em ordem crescente é: {lista_ordenada}')
+            pos += 1
+print(f'Os valores digitados em ordem foram {lista}.')
